@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+@keyframes fadeInField {
+  0% {opacity: 0%;}
+  50%{opacity: 50%;}
+  100%{opacity: 100%;}
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -73,6 +79,8 @@ body {
 
 .add-form {
   margin-bottom: 40px;
+  animation-name: fadeInField;
+  animation-duration: 1s;
 }
 
 .form-control {
